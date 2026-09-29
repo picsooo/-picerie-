@@ -219,3 +219,8 @@ section.s{padding:64px 0}
 }
 @media(prefers-reduced-motion:reduce){.track{animation:none}.ribbon{overflow-x:auto}}
 figure{margin:0}
+.v2bar{display:flex;gap:10px;align-items:center;justify-content:center;background:var(--leaf);color:var(--chalk);padding:11px 16px;text-decoration:none;font-size:.92rem;font-weight:500;text-align:center}
+.v2bar svg{color:var(--wood);flex:none;animation:twinkle 2.4s ease-in-out infinite}
+.v2bar:hover u{color:var(--wood)}
+@keyframes twinkle{50%{transform:scale(1.25) rotate(20deg)}}
+@media(prefers-reduced-motion:reduce){.v2bar svg{animation:none}}
